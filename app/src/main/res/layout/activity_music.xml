@@ -35,11 +35,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:onClick="playMedia"
         android:text="@string/ipu_button_play_text" />
 
     <VideoView
-        android:id="@+id/videoView"
+        android:id="@+id/hulaVideoView"
         android:layout_width="match_parent"
+        android:layout_gravity="center"
         android:layout_weight="1"
         android:layout_height="0dp" />
 
@@ -48,6 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:onClick="playMedia"
         android:text="@string/hula_button_watch_text" />
 
 </LinearLayout>
