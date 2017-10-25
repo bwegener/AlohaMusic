@@ -10,7 +10,8 @@ import android.widget.MediaController;
 import android.widget.VideoView;
 
 /**
- *
+ * The <code>MusicActivity</code> hosts all the buttons
+ * as well as the MediaPlayer and the VideoView
  *
  * @author Brian Wegener
  * @version 1.0
@@ -30,7 +31,7 @@ public class MusicActivity extends AppCompatActivity {
     MediaPlayer ipuPlayer;
 
     /**
-     *
+     * sets up the buttons, media players, and video view.
      * @param savedInstanceState
      */
     @Override
@@ -65,7 +66,9 @@ public class MusicActivity extends AppCompatActivity {
 
     /**
      * The playMedia class associates the buttons with the media
-     * associated with them
+     * associated with them.
+     * It also makes a decision onClick that
+     * chooses which song is clicked.
      * @param v
      */
     public void playMedia(View v)
@@ -132,6 +135,7 @@ public class MusicActivity extends AppCompatActivity {
 
     /**
      * The onStop method releases the ukelelePlayer and ipuPlayer
+     * from the MediaPlayer, thus saving space.
      */
     @Override
     protected void onStop() {

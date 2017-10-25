@@ -8,7 +8,9 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 /**
- *
+ * The <code>SplashActivity</code> hosts a splash page
+ * which runs for 3 seconds before sending the user to
+ * <code>MusicActivity</code>
  *
  * @author Brian Wegener
  * @version 1.0
@@ -18,7 +20,8 @@ import java.util.TimerTask;
 public class SplashActivity extends AppCompatActivity {
 
     /**
-     *
+     * The onCreate shows the splash page then sets up a TimerTask
+     * to send the user to the <code>MusicActivity</code> after 3 seconds.
      * @param savedInstanceState
      */
     @Override
